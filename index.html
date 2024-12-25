@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Givazza</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Givazza</h1>
+    </header>
+    <main>
+        <input id="wish-btn" type="button" value="Вишлист"></input>
+        <input id="awish-btn" type="button" value="Антивишлист"></input>
+        <form id="wish-form">
+            <input id="wish-input" type="text" placeholder="Я хочу" required>
+            <input id="wish-url" placeholder="Купить можно здесь" type="url">
+            <button id="wish-add-btn" type="submit">+</button>
+        </form>
+        <form id="awish-form" style="display: none;">
+            <input id="awish-input" type="text" placeholder="Я не хочу" required>
+            <input id="awish-url" placeholder="Купить можно здесь" type="url">
+            <button id="awish-add-btn" type="submit">-</button>
+        </form>
+        <ul id="wish-lst"></ul>
+        <ul id="awish-lst" style="display: none;"></ul>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
